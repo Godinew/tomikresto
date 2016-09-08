@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="connection.url">jdbc:mysql://sql6.freemysqlhosting.net:3306/sql6134557</property>
+    <property name="connection.username">sql6134557</property>
+    <property name="connection.password">4I3lr9wnff</property>
+    <property name="connection.pool_size">2</property>
+    <property name="cache.provider_class">
+		org.hibernate.cache.NoCacheProvider</property>
+    <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="show_sql">true</property>
+    <property name="hbm2ddl.auto">update</property>
+    <property name="current_session_context_class">thread</property>
+    <mapping class="com.company.tables.Gamer"/>
+  </session-factory>
+</hibernate-configuration>

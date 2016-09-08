@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>grt</servlet-name>
+        <servlet-class>grt</servlet-class>
+    </servlet>
+    <!-- Servlets -->
+    <!-- Servlets-mapping -->
+    <!-- Default page to serve -->
+    <welcome-file-list>
+        <welcome-file>KresNol.jsp</welcome-file>
+        <welcome-file>TickTackToe.jsp</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <servlet-name>StartServlet</servlet-name>
+        <servlet-class>StartServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>NewGameServlet</servlet-name>
+        <servlet-class>NewGameServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PlayGameServlet</servlet-name>
+        <servlet-class>PlayGameServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AcceptGameServlet</servlet-name>
+        <servlet-class>AcceptGameServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>JDBCresult</servlet-name>
+        <servlet-class>JDBCresult</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>grt</servlet-name>
+        <url-pattern>/grt</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>StartServlet</servlet-name>
+        <url-pattern>/StartServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>NewGameServlet</servlet-name>
+        <url-pattern>/NewGameServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PlayGameServlet</servlet-name>
+        <url-pattern>/PlayGameServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AcceptGameServlet</servlet-name>
+        <url-pattern>/AcceptGameServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>JDBCresult</servlet-name>
+        <url-pattern>/JDBCresult</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
